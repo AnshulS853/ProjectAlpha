@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ReceiptAlpha
+//  ProjectAlpha
 //
 //  Created by Anshul Singh on 16/07/2023.
 //

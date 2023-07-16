@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D5657A92A6425F900ED1192 /* ReceiptAlphaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5657A82A6425F900ED1192 /* ReceiptAlphaApp.swift */; };
+		3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */; };
 		3D5657AB2A6425F900ED1192 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5657AA2A6425F900ED1192 /* ContentView.swift */; };
 		3D5657AD2A6425FA00ED1192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5657AC2A6425FA00ED1192 /* Assets.xcassets */; };
 		3D5657B02A6425FA00ED1192 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5657AF2A6425FA00ED1192 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		3D5657A52A6425F900ED1192 /* ProjectAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5657A82A6425F900ED1192 /* ReceiptAlphaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptAlphaApp.swift; sourceTree = "<group>"; };
+		3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAlphaApp.swift; sourceTree = "<group>"; };
 		3D5657AA2A6425F900ED1192 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D5657AC2A6425FA00ED1192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5657AF2A6425FA00ED1192 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		3D56579C2A6425F900ED1192 = {
 			isa = PBXGroup;
 			children = (
-				3D5657A72A6425F900ED1192 /* ReceiptAlpha */,
+				3D5657A72A6425F900ED1192 /* ProjectAlpha */,
 				3D5657A62A6425F900ED1192 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +48,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D5657A72A6425F900ED1192 /* ReceiptAlpha */ = {
+		3D5657A72A6425F900ED1192 /* ProjectAlpha */ = {
 			isa = PBXGroup;
 			children = (
-				3D5657A82A6425F900ED1192 /* ReceiptAlphaApp.swift */,
+				3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */,
 				3D5657AA2A6425F900ED1192 /* ContentView.swift */,
 				3D5657AC2A6425FA00ED1192 /* Assets.xcassets */,
 				3D5657AE2A6425FA00ED1192 /* Preview Content */,
 			);
-			path = ReceiptAlpha;
+			path = ProjectAlpha;
 			sourceTree = "<group>";
 		};
 		3D5657AE2A6425FA00ED1192 /* Preview Content */ = {
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5657AB2A6425F900ED1192 /* ContentView.swift in Sources */,
-				3D5657A92A6425F900ED1192 /* ReceiptAlphaApp.swift in Sources */,
+				3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
