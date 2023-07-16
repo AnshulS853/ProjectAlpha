@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ProjectAlpha
-//
-//  Created by Anshul Singh on 16/07/2023.
-//
-
 import SwiftUI
 
 struct MainView: View {

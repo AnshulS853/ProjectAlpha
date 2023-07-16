@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ProjectAlpha
-//
-//  Created by Anshul Singh on 16/07/2023.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
@@ -13,17 +6,21 @@ struct SettingsView: View {
     @State private var iCloud_isEnabled:Bool = true
     
     var body: some View{
+        
         NavigationView{
-            Form{
+            VStack{
+                Form{
+                    
+                    Toggle("Enable Dark Mode",isOn:$darkMode_isEnabled)
+                    
+                    Toggle("Enable iCloud Backup",isOn:$iCloud_isEnabled)
+                }
+                .navigationTitle("Settings")
                 
-                Toggle("Enable Dark Mode",isOn:$darkMode_isEnabled)
-                
-                Toggle("Enable iCloud Backup",isOn:$iCloud_isEnabled)
-                
+                Text("App in development")
+                Text("Current version 1.0")
             }
-            .navigationTitle("Settings")
         }
-            
     }
 }
 
