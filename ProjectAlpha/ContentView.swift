@@ -9,10 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var searchText = ""
+    @State private var buttonClicks:Int = 0
     
     var body: some View {
-        
         VStack {
             Text("Project Alpha")
                 .fontWeight(.bold)
@@ -20,21 +19,41 @@ struct ContentView: View {
                 .bold()
                 .font(.system(size:55))
             
-            NavigationStack {
+            HStack{
+                Button {
+                } label: {
+                    Image(systemName: "gearshape")
+                        .padding(.leading, 7.0)
+                        .padding(/*@START_MENU_TOKEN@*/.top, -20.0/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 30))
+                        .foregroundColor(.accentColor)
+
+                        
+                        
+                }
+            Spacer()
             }
-            .padding(.top, -30.0)
-            .searchable(text: $searchText)
             
             Spacer()
             
-            Image(systemName: "camera.fill")
-                .resizable()
-                .scaledToFit()
-                .padding(.bottom, -130.0)
-                .scaleEffect(0.3)
-                .foregroundColor(.purple)
-            Text("Scan a Receipt")
+            Text("Number of button clicks:\n" + String(buttonClicks))
                 .multilineTextAlignment(.center)
+            
+            Spacer()
+            
+            Button {
+                buttonClicks += 1
+                
+            } label: {
+                VStack{
+                    Image(systemName: "camera.fill")
+                        .font(.system(size:100))
+                        .foregroundColor(.accentColor)
+                    
+                    Text("Scan a Receipt")
+                        .multilineTextAlignment(.center)
+                }
+            }
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
