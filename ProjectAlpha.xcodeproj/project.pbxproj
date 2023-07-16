@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D5657A52A6425F900ED1192 /* ReceiptAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5657A52A6425F900ED1192 /* ProjectAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5657A82A6425F900ED1192 /* ReceiptAlphaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptAlphaApp.swift; sourceTree = "<group>"; };
 		3D5657AA2A6425F900ED1192 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D5657AC2A6425FA00ED1192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		3D5657A62A6425F900ED1192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D5657A52A6425F900ED1192 /* ReceiptAlpha.app */,
+				3D5657A52A6425F900ED1192 /* ProjectAlpha.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D5657A42A6425F900ED1192 /* ReceiptAlpha */ = {
+		3D5657A42A6425F900ED1192 /* ProjectAlpha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D5657B32A6425FA00ED1192 /* Build configuration list for PBXNativeTarget "ReceiptAlpha" */;
+			buildConfigurationList = 3D5657B32A6425FA00ED1192 /* Build configuration list for PBXNativeTarget "ProjectAlpha" */;
 			buildPhases = (
 				3D5657A12A6425F900ED1192 /* Sources */,
 				3D5657A22A6425F900ED1192 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ReceiptAlpha;
+			name = ProjectAlpha;
 			productName = ReceiptAlpha;
-			productReference = 3D5657A52A6425F900ED1192 /* ReceiptAlpha.app */;
+			productReference = 3D5657A52A6425F900ED1192 /* ProjectAlpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D5657A02A6425F900ED1192 /* Build configuration list for PBXProject "ReceiptAlpha" */;
+			buildConfigurationList = 3D5657A02A6425F900ED1192 /* Build configuration list for PBXProject "ProjectAlpha" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D5657A42A6425F900ED1192 /* ReceiptAlpha */,
+				3D5657A42A6425F900ED1192 /* ProjectAlpha */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D5657A02A6425F900ED1192 /* Build configuration list for PBXProject "ReceiptAlpha" */ = {
+		3D5657A02A6425F900ED1192 /* Build configuration list for PBXProject "ProjectAlpha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D5657B12A6425FA00ED1192 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D5657B32A6425FA00ED1192 /* Build configuration list for PBXNativeTarget "ReceiptAlpha" */ = {
+		3D5657B32A6425FA00ED1192 /* Build configuration list for PBXNativeTarget "ProjectAlpha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D5657B42A6425FA00ED1192 /* Debug */,
