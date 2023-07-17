@@ -12,7 +12,7 @@
 		3D5657AD2A6425FA00ED1192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5657AC2A6425FA00ED1192 /* Assets.xcassets */; };
 		3D5657B02A6425FA00ED1192 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5657AF2A6425FA00ED1192 /* Preview Assets.xcassets */; };
 		3D8355612A64AE8200F78ADD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8355602A64AE8200F78ADD /* SettingsView.swift */; };
-		3D8355632A65818E00F78ADD /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8355622A65818E00F78ADD /* CameraView.swift */; };
+		3D8355652A65EB4400F78ADD /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		3D5657AC2A6425FA00ED1192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5657AF2A6425FA00ED1192 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D8355602A64AE8200F78ADD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		3D8355622A65818E00F78ADD /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				3D5657AA2A6425F900ED1192 /* MainView.swift */,
+				3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */,
 				3D8355602A64AE8200F78ADD /* SettingsView.swift */,
-				3D8355622A65818E00F78ADD /* CameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				3D8355612A64AE8200F78ADD /* SettingsView.swift in Sources */,
 				3D5657AB2A6425F900ED1192 /* MainView.swift in Sources */,
 				3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */,
-				3D8355632A65818E00F78ADD /* CameraView.swift in Sources */,
+				3D8355652A65EB4400F78ADD /* DocumentScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +294,7 @@
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Needs Camera Access to Document Scan a Receipt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +324,7 @@
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Needs Camera Access to Document Scan a Receipt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
