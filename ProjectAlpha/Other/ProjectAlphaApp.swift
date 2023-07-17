@@ -2,26 +2,19 @@ import SwiftUI
 
 @main
 struct ProjectAlphaApp: App {
-    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
-    @AppStorage("useiOSAppearance") private var useiOSAppearance: Bool = true
+
+    @AppStorage("useiOSAppearance") private var useiOSAppearance:Bool = true
+    @AppStorage("isDarkMode") private var isDarkMode:Bool = false
 
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .preferredColorScheme(isDarkMode ? .dark : .light)
-        }
-        .onChange(of: isDarkMode) { newValue in
             if useiOSAppearance {
-                isDarkMode = isDeviceDefaultDarkMode()
+                MainView()
             }
-        }
-    }
-
-    private func isDeviceDefaultDarkMode() -> Bool {
-        if UIScreen.main.traitCollection.userInterfaceStyle == .dark {
-            return true
-        } else {
-            return false
+            else{
+                MainView()
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
+            }
         }
     }
 }

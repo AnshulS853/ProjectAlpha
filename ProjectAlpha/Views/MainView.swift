@@ -8,7 +8,7 @@ struct MainView: View {
                     .font(.system(size:50))
                     .fontWeight(.semibold)
                     .padding(.top, 30.0)
-                
+
                 NavigationLink(destination: SettingsView()){
                     HStack{
                         Image(systemName: "gearshape")
@@ -19,10 +19,9 @@ struct MainView: View {
                     }
                     Spacer()
                 }
-                
+
                 Spacer()
-                
-                
+
                 NavigationLink(destination: CameraView()){
                     VStack{
                         Image(systemName: "camera.fill")
@@ -32,9 +31,6 @@ struct MainView: View {
                             .foregroundColor(Color.gray)
                     }
                 }
-
-
-                
             }
         }
     }
