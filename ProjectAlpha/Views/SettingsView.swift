@@ -2,18 +2,17 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @State private var darkMode_isEnabled:Bool = false
-    @State private var iCloud_isEnabled:Bool = true
+    @AppStorage("isDarkMode") private var isDarkMode:Bool = false
+    @State private var isiCloud:Bool = true
     
     var body: some View{
         
         NavigationView{
             VStack{
                 Form{
+                    Toggle("Dark Mode",isOn:$isDarkMode)
                     
-                    Toggle("Enable Dark Mode",isOn:$darkMode_isEnabled)
-                    
-                    Toggle("Enable iCloud Backup",isOn:$iCloud_isEnabled)
+                    Toggle("iCloud Backup",isOn:$isiCloud)
                 }
                 .navigationTitle("Settings")
                 

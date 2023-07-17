@@ -1,17 +1,14 @@
-//
-//  ProjectAlphaApp.swift
-//  ProjectAlpha
-//
-//  Created by Anshul Singh on 16/07/2023.
-//
-
 import SwiftUI
 
 @main
 struct ProjectAlphaApp: App {
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
             MainView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
