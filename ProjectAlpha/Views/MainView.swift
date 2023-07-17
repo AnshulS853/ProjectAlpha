@@ -7,7 +7,6 @@ struct MainView: View {
                 Text("Project Alpha")
                     .font(.system(size:50))
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.gray)
                     .padding(.top, 30.0)
                 
                 NavigationLink(destination: SettingsView()){
@@ -22,6 +21,21 @@ struct MainView: View {
                 }
                 
                 Spacer()
+                
+                Button {
+                    print("Button clicked")
+                } label: {
+                    VStack{
+                        Image(systemName: "camera.fill")
+                            .font(.system(size:40))
+                            .foregroundColor(Color.red)
+                        Text("Scan receipt")
+                            .foregroundColor(Color.gray)
+                    }
+                }
+
+
+                
             }
         }
     }
