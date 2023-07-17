@@ -22,9 +22,8 @@ struct MainView: View {
                 
                 Spacer()
                 
-                Button {
-                    print("Button clicked")
-                } label: {
+                
+                NavigationLink(destination: CameraView()){
                     VStack{
                         Image(systemName: "camera.fill")
                             .font(.system(size:40))
