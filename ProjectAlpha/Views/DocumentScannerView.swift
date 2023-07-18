@@ -20,9 +20,9 @@ struct DocumentScannerView: UIViewControllerRepresentable {
 
     class Coordinator: NSObject, VNDocumentCameraViewControllerDelegate {
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-            // Process the scanned document here
-            // Access the scanned images from `scan` and perform any required operations
-            // For example, you can save the scanned images, extract text, etc.
+            // Process scanned document here
+            // Access scanned images from `scan` and perform any required operations
+            // For example, can save the scanned images, extract text, etc.
 
             // Dismiss the document scanner view
             controller.dismiss(animated: true)
@@ -39,4 +39,3 @@ struct DocumentScannerView: UIViewControllerRepresentable {
         }
     }
 }
-
