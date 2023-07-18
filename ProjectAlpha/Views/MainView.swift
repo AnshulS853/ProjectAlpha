@@ -3,8 +3,8 @@ import VisionKit
 
 struct MainView: View {
     
+    //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
-    // Flag set to enable document scanner upon button press
     
     var body: some View{
         NavigationView{

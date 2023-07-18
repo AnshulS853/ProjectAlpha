@@ -34,7 +34,7 @@ struct SimpleEntry: TimelineEntry {
 struct LockScreenWidgetEntryView : View {
     @Environment(\.widgetFamily) var widgetFamily
     var entry: Provider.Entry
-    
+
     var body: some View {
         switch widgetFamily {
         case .accessoryCircular:
@@ -43,7 +43,7 @@ struct LockScreenWidgetEntryView : View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
-            
+
         case .accessoryRectangular:
             HStack{
                 Image(systemName: "camera.fill")
@@ -54,7 +54,7 @@ struct LockScreenWidgetEntryView : View {
 
         default:
             Text("Not implemented")
-                
+
         }
     }
 }
@@ -66,10 +66,10 @@ struct LockScreenWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             LockScreenWidgetEntryView(entry: entry)
         }
-        
+
         //Adding Widget Families
         .supportedFamilies([.accessoryCircular,.accessoryRectangular])
-        
+
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
@@ -80,7 +80,7 @@ struct LockScreenWidget_Previews: PreviewProvider {
         LockScreenWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
             .previewDisplayName("Circular")
-        
+
         LockScreenWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
             .previewDisplayName("Rectangular")

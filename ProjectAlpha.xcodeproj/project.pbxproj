@@ -46,6 +46,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D0CC7212A67208E0083CDC3 /* ProjectAlpha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectAlpha.entitlements; sourceTree = "<group>"; };
+		3D0CC7222A6720AA0083CDC3 /* LockScreenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockScreenWidgetExtension.entitlements; sourceTree = "<group>"; };
+		3D0CC7232A67289C0083CDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D5657A52A6425F900ED1192 /* ProjectAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAlphaApp.swift; sourceTree = "<group>"; };
 		3D5657AA2A6425F900ED1192 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		3D56579C2A6425F900ED1192 = {
 			isa = PBXGroup;
 			children = (
+				3D0CC7222A6720AA0083CDC3 /* LockScreenWidgetExtension.entitlements */,
 				3D5657A72A6425F900ED1192 /* ProjectAlpha */,
 				3DA71EA02A66D9E700D9EEC4 /* LockScreenWidget */,
 				3DA71E522A66B74500D9EEC4 /* Frameworks */,
@@ -104,6 +108,8 @@
 		3D5657A72A6425F900ED1192 /* ProjectAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				3D0CC7232A67289C0083CDC3 /* Info.plist */,
+				3D0CC7212A67208E0083CDC3 /* ProjectAlpha.entitlements */,
 				3D83555F2A64AA3800F78ADD /* Other */,
 				3D83555E2A64AA2E00F78ADD /* Views */,
 				3D5657AE2A6425FA00ED1192 /* Preview Content */,
@@ -406,13 +412,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectAlpha/ProjectAlpha.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectAlpha/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Needs Camera Access to Document Scan a Receipt";
+				INFOPLIST_FILE = ProjectAlpha/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ProjectAlpha Needs Camera Access to Document Scan a Receipt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,13 +445,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectAlpha/ProjectAlpha.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectAlpha/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Needs Camera Access to Document Scan a Receipt";
+				INFOPLIST_FILE = ProjectAlpha/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ProjectAlpha Needs Camera Access to Document Scan a Receipt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LockScreenWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
@@ -494,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LockScreenWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B859T7ZS6;
