@@ -70,8 +70,8 @@ struct LockScreenWidget: Widget {
         //Adding Widget Families
         .supportedFamilies([.accessoryCircular,.accessoryRectangular])
 
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Project Alpha Widgets")
+        .description("Quickly scan your receipts by\nplacing a widget on your lockscreen")
     }
 }
 
