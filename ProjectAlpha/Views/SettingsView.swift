@@ -16,7 +16,8 @@ struct SettingsView: View {
                     Section(header: Text("Appearance")){
                         Toggle("Use iOS Appearance", isOn: $useiOSAppearance)
                         
-                        //Only when the useiOSAppearances variable is set to false, the dark mode toggle appears
+                        //Dark mode toggle set to appear when
+                        //"Use iOS Appearance" toggle is off
                         if useiOSAppearance == false {
                             Toggle("Dark Mode",isOn:$isDarkMode)
                         }
