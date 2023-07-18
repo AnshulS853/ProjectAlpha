@@ -1,10 +1,3 @@
-//
-//  LockscreenWidgets.swift
-//  LockscreenWidgets
-//
-//  Created by Anshul Singh on 18/07/2023.
-//
-
 import WidgetKit
 import SwiftUI
 
@@ -38,33 +31,58 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct LockscreenWidgetsEntryView : View {
+struct LockScreenWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: Provider.Entry
-
+    
     var body: some View {
-        Text(entry.date, style: .time)
+        switch widgetFamily {
+        case .accessoryCircular:
+            VStack{
+                Image(systemName: "newspaper.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
+            
+        case .accessoryRectangular:
+            HStack{
+                Image(systemName: "camera.fill")
+                    .font(.system(size:30))
+                Text("Scan\nReceipt")
+                    .font(.system(size:17))
+            }
+
+        default:
+            Text("Not implemented")
+                
+        }
     }
 }
 
-struct LockscreenWidgets: Widget {
-    let kind: String = "LockscreenWidgets"
+struct LockScreenWidget: Widget {
+    let kind: String = "LockScreenWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            LockscreenWidgetsEntryView(entry: entry)
+            LockScreenWidgetEntryView(entry: entry)
         }
         
-        //Configuring Widget family
-        .supportedFamilies([.systemMedium])
+        //Adding Widget Families
+        .supportedFamilies([.accessoryCircular,.accessoryRectangular])
         
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct LockscreenWidgets_Previews: PreviewProvider {
+struct LockScreenWidget_Previews: PreviewProvider {
     static var previews: some View {
-        LockscreenWidgetsEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        LockScreenWidgetEntryView(entry: SimpleEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .accessoryCircular))
+            .previewDisplayName("Circular")
+        
+        LockScreenWidgetEntryView(entry: SimpleEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+            .previewDisplayName("Rectangular")
     }
 }
