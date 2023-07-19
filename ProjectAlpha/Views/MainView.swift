@@ -2,10 +2,10 @@ import SwiftUI
 import VisionKit
 
 struct MainView: View {
-    
+
     //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
-    
+
     var body: some View{
         NavigationView{
             VStack{
@@ -28,7 +28,7 @@ struct MainView: View {
                 }
 
                 Spacer()
-                
+
                 //Button directed to DocumentScannerView file
                 Button {
                     //Flag set to true upon button press to open camera

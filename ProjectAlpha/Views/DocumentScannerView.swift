@@ -95,6 +95,7 @@ struct DocumentScannerView: UIViewControllerRepresentable {
             } completionHandler: { (_, error) in
                 if let error = error {
                     // Handle error while saving the image
+                    // --For diagnostic development purposes > Remove
                     print("Error saving image to photo library: \(error)")
                 } else {
                     // Image saved successfully
