@@ -1,6 +1,8 @@
 import SwiftUI
 import VisionKit
 
+//adding vcs test comment
+
 struct MainView: View {
 
     //Flag set to enable document scanner upon button press
@@ -43,6 +45,7 @@ struct MainView: View {
                                 .foregroundColor(Color.gray)
                         }
                 }
+                
                 //present the sheet with document scanner and call window
                 .sheet(isPresented: $showDocumentScanner) {
                     DocumentScannerView()
