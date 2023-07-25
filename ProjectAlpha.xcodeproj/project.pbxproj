@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2D6B812A704B9D00DD73D1 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D6B802A704B9D00DD73D1 /* PDFView.swift */; };
 		3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */; };
 		3D5657AB2A6425F900ED1192 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5657AA2A6425F900ED1192 /* MainView.swift */; };
 		3D5657AD2A6425FA00ED1192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5657AC2A6425FA00ED1192 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		3D0CC7212A67208E0083CDC3 /* ProjectAlpha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectAlpha.entitlements; sourceTree = "<group>"; };
 		3D0CC7222A6720AA0083CDC3 /* LockScreenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockScreenWidgetExtension.entitlements; sourceTree = "<group>"; };
 		3D0CC7232A67289C0083CDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3D2D6B802A704B9D00DD73D1 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		3D5657A52A6425F900ED1192 /* ProjectAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5657A82A6425F900ED1192 /* ProjectAlphaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAlphaApp.swift; sourceTree = "<group>"; };
 		3D5657AA2A6425F900ED1192 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		3D83555E2A64AA2E00F78ADD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D2D6B802A704B9D00DD73D1 /* PDFView.swift */,
 				3D5657AA2A6425F900ED1192 /* MainView.swift */,
 				3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */,
 				3D8355602A64AE8200F78ADD /* SettingsView.swift */,
@@ -268,6 +271,7 @@
 				3D8355612A64AE8200F78ADD /* SettingsView.swift in Sources */,
 				3D5657AB2A6425F900ED1192 /* MainView.swift in Sources */,
 				3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */,
+				3D2D6B812A704B9D00DD73D1 /* PDFView.swift in Sources */,
 				3D8355652A65EB4400F78ADD /* DocumentScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
