@@ -51,34 +51,27 @@ import VisionKit
 import Photos
 
 struct DocumentScannerView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = VNDocumentCameraViewController
-
-    func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
-        let documentScannerViewController = VNDocumentCameraViewController()
-        documentScannerViewController.delegate = context.coordinator
-        return documentScannerViewController
-    }
-
-    func updateUIViewController(_ uiViewController: VNDocumentCameraViewController, context: Context) {
-        // No update needed
-    }
-
     func makeCoordinator() -> Coordinator {
-        Coordinator()
+        Coordinator(completion: completionHandler)
     }
 
-    class Coordinator: NSObject, VNDocumentCameraViewControllerDelegate {
+    final class Coordinator: NSObject, VNDocumentCameraViewControllerDelegate {
+        private let completionHandler: ([String]?) -> Void
+        
+        init(completion: @escaping ([String]?) -> Void) {
+            self.completionHandler = completion
+        }
+        
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-            // Access scanned images from `scan` and perform any required operations
+            let recogniser = TextRecogniser(cameraScan: scan)
+            recogniser.recogniseText(withCompletionHandler: completionHandler)
+            
             for pageIndex in 0 ..< scan.pageCount {
                 let image = scan.imageOfPage(at: pageIndex)
                 saveImageToPhotoLibrary(image)
             }
-            
-            // Dismiss the document scanner view
-            controller.dismiss(animated: true)
         }
-
+        
         func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
             // Handle cancellation here if needed
             controller.dismiss(animated: true)
@@ -103,5 +96,23 @@ struct DocumentScannerView: UIViewControllerRepresentable {
                 }
             }
         }
+    }
+    
+    func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
+        let documentScannerViewController = VNDocumentCameraViewController()
+        documentScannerViewController.delegate = context.coordinator
+        return documentScannerViewController
+    }
+
+    func updateUIViewController(_ uiViewController: VNDocumentCameraViewController, context: Context) {
+        // No update needed
+    }
+
+    typealias UIViewControllerType = VNDocumentCameraViewController
+    
+    private let completionHandler: ([String]?) -> Void
+    
+    init(completion: @escaping ([String]?) -> Void) {
+        self.completionHandler = completion
     }
 }

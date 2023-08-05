@@ -19,6 +19,7 @@
 		3DA71EA42A66D9E700D9EEC4 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA71EA32A66D9E700D9EEC4 /* LockScreenWidget.swift */; };
 		3DA71EA62A66D9E900D9EEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA71EA52A66D9E900D9EEC4 /* Assets.xcassets */; };
 		3DA71EAA2A66D9E900D9EEC4 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3DA71E9D2A66D9E700D9EEC4 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43D79D062A7EE98400C5AA9A /* TextRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3DA71EA32A66D9E700D9EEC4 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
 		3DA71EA52A66D9E900D9EEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA71EA72A66D9E900D9EEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecogniser.swift; path = ProjectAlpha/TextRecogniser.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				3D5657AA2A6425F900ED1192 /* MainView.swift */,
 				3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */,
+				43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */,
 				3D8355602A64AE8200F78ADD /* SettingsView.swift */,
 			);
 			path = Views;
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8355612A64AE8200F78ADD /* SettingsView.swift in Sources */,
+				43D79D062A7EE98400C5AA9A /* TextRecogniser.swift in Sources */,
 				3D5657AB2A6425F900ED1192 /* MainView.swift in Sources */,
 				3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */,
 				3D8355652A65EB4400F78ADD /* DocumentScannerView.swift in Sources */,
