@@ -7,6 +7,7 @@ struct MainView: View {
 
     //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
+    @State private var texts: [ScanData] = []
 
     var body: some View{
         NavigationView{
@@ -48,11 +49,23 @@ struct MainView: View {
                 
                 //present the sheet with document scanner and call window
                 .sheet(isPresented: $showDocumentScanner) {
-                    DocumentScannerView()
+                    makeScannerView()
                 }
             }
         }
     }
+    func makeScannerView() -> DocumentScannerView {
+        let scanner = DocumentScannerView(completion: {
+            textPerPage in
+            if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines) {
+                let newScanData = ScanData(content: outputText)
+                self.texts.append(newScanData)
+            }
+        })
+        self.showDocumentScanner = false
+        return scanner
+    }
+    
 }
 
 //Code for preview window in Xcode
