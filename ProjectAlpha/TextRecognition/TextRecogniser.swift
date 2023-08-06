@@ -53,6 +53,7 @@ final class TextRecogniser {
                         .string})
                         // connect each line with a new line
                         .joined(separator: "\n")
+                    
                 }
                 catch {
                     print(error)

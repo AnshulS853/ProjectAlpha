@@ -8,10 +8,10 @@ struct MainView: View {
     @State private var showDocumentScanner = false
     // array of the texts (along with UUID) that have been returned from the text recognition
     @State private var scannedTexts: [ScanData] = []
-
-    var body: some View{
-        NavigationView{
-            VStack{
+    
+    var body: some View {
+        NavigationView {
+            VStack {
                 //Main title
                 Text("Project Alpha")
                     .font(.system(size:50))
@@ -81,7 +81,6 @@ struct MainView: View {
             }
         })
         // hide the document scanner
-        self.showDocumentScanner = false
         return scanner
     }
     

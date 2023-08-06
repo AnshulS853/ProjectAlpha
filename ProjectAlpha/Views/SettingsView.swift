@@ -37,7 +37,10 @@ struct SettingsView: View {
                         HStack {
                             Text("Developed by")
                             Spacer()
-                            Text("Anshul Singh")
+                            VStack() {
+                                Text("Anshul Singh")
+                                Text("Ben Alexander")
+                            }
                         }
                     }
                 }

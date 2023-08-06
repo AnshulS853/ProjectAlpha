@@ -65,20 +65,23 @@ struct DocumentScannerView: UIViewControllerRepresentable {
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
             let recogniser = TextRecogniser(cameraScan: scan)
             recogniser.recogniseText(withCompletionHandler: completionHandler)
-            
+            print("save clicked?")
             for pageIndex in 0 ..< scan.pageCount {
                 let image = scan.imageOfPage(at: pageIndex)
                 saveImageToPhotoLibrary(image)
             }
+            
         }
         
         func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
             // Handle cancellation here if needed
+            print("cancel clicked")
             controller.dismiss(animated: true)
         }
 
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error) {
             // Handle error here if needed
+            print("swiped away")
             controller.dismiss(animated: true)
         }
         
