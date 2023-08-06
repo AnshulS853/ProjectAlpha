@@ -4,7 +4,6 @@ import VisionKit
 //adding vcs test comment
 
 struct MainView: View {
-
     //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
 <<<<<<< HEAD
