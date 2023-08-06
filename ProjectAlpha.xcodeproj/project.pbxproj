@@ -65,7 +65,7 @@
 		3DA71EA32A66D9E700D9EEC4 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
 		3DA71EA52A66D9E900D9EEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA71EA72A66D9E900D9EEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecogniser.swift; path = ProjectAlpha/TextRecogniser.swift; sourceTree = SOURCE_ROOT; };
+		43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecogniser.swift; path = ProjectAlpha/TextRecognition/TextRecogniser.swift; sourceTree = SOURCE_ROOT; };
 		43D79D072A7EEF7000C5AA9A /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,6 @@
 		3D56579C2A6425F900ED1192 = {
 			isa = PBXGroup;
 			children = (
-				43D79D072A7EEF7000C5AA9A /* ScanData.swift */,
 				3D0CC7222A6720AA0083CDC3 /* LockScreenWidgetExtension.entitlements */,
 				3D5657A72A6425F900ED1192 /* ProjectAlpha */,
 				3DA71EA02A66D9E700D9EEC4 /* LockScreenWidget */,
@@ -113,6 +112,7 @@
 		3D5657A72A6425F900ED1192 /* ProjectAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				43D79D0A2A7FBF6800C5AA9A /* TextRecognition */,
 				3D0CC7232A67289C0083CDC3 /* Info.plist */,
 				3D0CC7212A67208E0083CDC3 /* ProjectAlpha.entitlements */,
 				3D83555F2A64AA3800F78ADD /* Other */,
@@ -135,7 +135,6 @@
 			children = (
 				3D5657AA2A6425F900ED1192 /* MainView.swift */,
 				3D8355642A65EB4400F78ADD /* DocumentScannerView.swift */,
-				43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */,
 				3D8355602A64AE8200F78ADD /* SettingsView.swift */,
 			);
 			path = Views;
@@ -168,6 +167,15 @@
 				3DA71EA72A66D9E900D9EEC4 /* Info.plist */,
 			);
 			path = LockScreenWidget;
+			sourceTree = "<group>";
+		};
+		43D79D0A2A7FBF6800C5AA9A /* TextRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				43D79D072A7EEF7000C5AA9A /* ScanData.swift */,
+				43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */,
+			);
+			path = TextRecognition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,7 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectAlpha/Preview Content\"";
-				DEVELOPMENT_TEAM = 4B859T7ZS6;
+				DEVELOPMENT_TEAM = WB46CA9337;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProjectAlpha/Info.plist;
