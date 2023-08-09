@@ -20,6 +20,10 @@
 		3DA71EA62A66D9E900D9EEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA71EA52A66D9E900D9EEC4 /* Assets.xcassets */; };
 		3DA71EAA2A66D9E900D9EEC4 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3DA71E9D2A66D9E700D9EEC4 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		43D79D062A7EE98400C5AA9A /* TextRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */; };
+<<<<<<< HEAD
+=======
+		43D79D082A7EEF7000C5AA9A /* RecognisedTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D79D072A7EEF7000C5AA9A /* RecognisedTextFormat.swift */; };
+>>>>>>> 9d4877e (minor changes)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +68,12 @@
 		3DA71EA32A66D9E700D9EEC4 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
 		3DA71EA52A66D9E900D9EEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA71EA72A66D9E900D9EEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecogniser.swift; path = ProjectAlpha/TextRecogniser.swift; sourceTree = SOURCE_ROOT; };
+=======
+		43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextRecogniser.swift; path = ProjectAlpha/TextRecognition/TextRecogniser.swift; sourceTree = SOURCE_ROOT; };
+		43D79D072A7EEF7000C5AA9A /* RecognisedTextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognisedTextFormat.swift; sourceTree = "<group>"; };
+>>>>>>> 9d4877e (minor changes)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				3D0CC7232A67289C0083CDC3 /* Info.plist */,
+				43D79D0A2A7FBF6800C5AA9A /* TextRecognition */,
 				3D0CC7212A67208E0083CDC3 /* ProjectAlpha.entitlements */,
 				3D83555F2A64AA3800F78ADD /* Other */,
 				3D83555E2A64AA2E00F78ADD /* Views */,
@@ -167,6 +177,18 @@
 			path = LockScreenWidget;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		43D79D0A2A7FBF6800C5AA9A /* TextRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				43D79D072A7EEF7000C5AA9A /* RecognisedTextFormat.swift */,
+				43D79D052A7EE98400C5AA9A /* TextRecogniser.swift */,
+			);
+			path = TextRecognition;
+			sourceTree = "<group>";
+		};
+>>>>>>> 9d4877e (minor changes)
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +292,10 @@
 			files = (
 				3D8355612A64AE8200F78ADD /* SettingsView.swift in Sources */,
 				43D79D062A7EE98400C5AA9A /* TextRecogniser.swift in Sources */,
+<<<<<<< HEAD
+=======
+				43D79D082A7EEF7000C5AA9A /* RecognisedTextFormat.swift in Sources */,
+>>>>>>> 9d4877e (minor changes)
 				3D5657AB2A6425F900ED1192 /* MainView.swift in Sources */,
 				3D5657A92A6425F900ED1192 /* ProjectAlphaApp.swift in Sources */,
 				3D8355652A65EB4400F78ADD /* DocumentScannerView.swift in Sources */,

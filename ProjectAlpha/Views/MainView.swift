@@ -7,10 +7,19 @@ struct MainView: View {
 
     //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
+<<<<<<< HEAD
 
     var body: some View{
         NavigationView{
             VStack{
+=======
+    // array of the texts (along with UUID) that have been returned from the text recognition
+    @State private var scannedTexts: [RecognisedTextFormat] = []
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+>>>>>>> 9d4877e (minor changes)
                 //Main title
                 Text("Project Alpha")
                     .font(.system(size:50))
@@ -53,6 +62,25 @@ struct MainView: View {
             }
         }
     }
+<<<<<<< HEAD
+=======
+    // this creates the DocumentScannerView, and once completed (document has been scanned) will format the text into an array for each document that was scanned
+    func makeScannerView() -> DocumentScannerView {
+        // iterate over each document that was scanned
+        let scanner = DocumentScannerView(completion: {
+            textPerPage in
+            // if there is scanned text from the document scanner, then append to the scannedTexts array.
+            // format all the text from each page (this can be made its own function later on for readability)
+            if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines) {
+                // create a new data scan struct
+                let newScanData = RecognisedTextFormat(content: outputText)
+                self.scannedTexts.append(newScanData)
+            }
+        })
+        return scanner
+    }
+    
+>>>>>>> 9d4877e (minor changes)
 }
 
 //Code for preview window in Xcode
