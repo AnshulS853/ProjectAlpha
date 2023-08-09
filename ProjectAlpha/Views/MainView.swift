@@ -7,7 +7,7 @@ struct MainView: View {
     //Flag set to enable document scanner upon button press
     @State private var showDocumentScanner = false
     // array of the texts (along with UUID) that have been returned from the text recognition
-    @State private var scannedTexts: [ScanData] = []
+    @State private var scannedTexts: [RecognisedTextFormat] = []
     
     var body: some View {
         NavigationView {
@@ -76,11 +76,10 @@ struct MainView: View {
             // format all the text from each page (this can be made its own function later on for readability)
             if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines) {
                 // create a new data scan struct
-                let newScanData = ScanData(content: outputText)
+                let newScanData = RecognisedTextFormat(content: outputText)
                 self.scannedTexts.append(newScanData)
             }
         })
-        // hide the document scanner
         return scanner
     }
     

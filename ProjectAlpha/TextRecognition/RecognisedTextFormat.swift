@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScanData: Identifiable{
+struct RecognisedTextFormat: Identifiable{
     var id = UUID()
     let content: String
     
